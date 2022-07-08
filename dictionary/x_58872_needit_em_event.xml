@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="em_event" max_length="40" name="x_58872_needit_em_event" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Node" max_length="40" name="node" type="string"/>
+        <element choice="1" default="4" label="Priority" max_length="40" name="priority" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1-Critical" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2-high" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3-mid" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="4-low" sequence="3" value="4"/>
+            </choice>
+        </element>
+    </element>
+</database>
